@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'google-civic-api/version'
+require 'google-civic/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "google-civic-api"
-  spec.version       = Google::Civic::Api::VERSION
+  spec.name          = "google-civic"
+  spec.version       = Google::Civic::VERSION
   spec.authors       = ["Coding ZEAL", "Adam Cuppy"]
   spec.email         = ["adam@codingzeal.com"]
   spec.summary   = %q{Google Civic API wrapper}
-  spec.homepage      = "https://github.com/CodingZeal/google-civic-api-ruby"
+  spec.homepage      = "https://github.com/CodingZeal/google-civic-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -21,4 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "pry"
+  spec.add_development_dependency "vcr"
 end

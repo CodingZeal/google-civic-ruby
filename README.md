@@ -1,11 +1,11 @@
-# Google::Civic::Api
+# Google::Civic
 
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'google-civic-api-ruby'
+    gem 'google-civic-ruby'
 
 And then execute:
 
@@ -13,7 +13,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install google-civic-api-ruby
+    $ gem install google-civic-ruby
 
 ## Usage
 
