@@ -8,6 +8,6 @@ module Google::Civic
 
     its(:id)             { should_not be_nil }
     its(:name)           { should_not be_nil }
-    its(:election_day)   { should_not be_nil }
+    its(:electionDay)   { should_not be_nil }
   end
 end
