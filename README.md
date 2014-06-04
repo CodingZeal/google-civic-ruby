@@ -1,5 +1,5 @@
 # Google::Civic
-
+[![Build Status](https://travis-ci.org/CodingZeal/google-civic-ruby.svg?branch=master)](https://travis-ci.org/CodingZeal/google-civic-ruby) [![Code Climate](https://codeclimate.com/github/CodingZeal/google-civic-ruby.png)](https://codeclimate.com/github/CodingZeal/google-civic-ruby)
 
 ## Installation
 
