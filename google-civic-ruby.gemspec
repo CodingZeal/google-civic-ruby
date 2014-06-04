@@ -3,7 +3,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'google-civic/version'
 
-uem::Specification.new do |spec|
+Gem::Specification.new do |spec|
   spec.name          = "google-civic-ruby"
   spec.version       = Google::Civic::VERSION
   spec.authors       = ["Coding ZEAL", "Adam Cuppy"]
