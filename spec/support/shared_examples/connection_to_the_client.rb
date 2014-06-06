@@ -9,8 +9,11 @@ module Google
           base_url: Router::BASE_URL
         }
       }
+      let(:method) { :get }
+      let(:path) { "elections?zipcode=#{zipcode}&key=#{api_key}" }
+      let(:kind) { "elections" }
 
-      before { stub_request_for("elections", "elections?zipcode=#{zipcode}&key=#{api_key}") }
+      before { stub_request_for(method, kind, path) }
     end
   end
 end
