@@ -10,6 +10,10 @@ module Google
         Elections.for_zipcode(zipcode, self)
       end
 
+      def representative_info(address)
+        RepresentativeInfo.for_address(address, self)
+      end
+
       def voter_info(address)
         VoterInfo.for_address(address, self)
       end
