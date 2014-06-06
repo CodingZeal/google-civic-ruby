@@ -1,5 +1,4 @@
 require "spec_helper"
-require "multi_json"
 
 module Google::Civic
   describe Election do

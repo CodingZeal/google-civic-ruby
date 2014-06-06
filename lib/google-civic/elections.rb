@@ -1,5 +1,3 @@
-require "multi_json"
-
 module Google
   module Civic
     module Elections
