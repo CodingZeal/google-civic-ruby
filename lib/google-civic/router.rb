@@ -25,11 +25,6 @@ module Google
       def path_for(kind)
         [BASE_PATH, route_map_for(kind).fetch(:path)].join('')
       end
-
-      def klass_for(kind)
-        route_map_for(kind).fetch(:klass)
-      end
-      alias :class_for :klass_for
     end
   end
 end
