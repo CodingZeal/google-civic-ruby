@@ -4,11 +4,16 @@ module Google
 
       BASE_URL  = "https://www.googleapis.com"
       BASE_PATH = "/civicinfo/v1"
+
       ROUTES    = {
         elections: {
           method: :get,
-          path: "/elections",
-          klass: Election
+          path:   "/elections"
+        },
+
+        representative_info: {
+          method: :post,
+          path:   "/representatives/lookup"
         }
       }
 
