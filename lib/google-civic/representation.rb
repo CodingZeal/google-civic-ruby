@@ -1,3 +1,5 @@
+require 'ostruct'
+
 module Google
   module Civic
     class Representation < OpenStruct
