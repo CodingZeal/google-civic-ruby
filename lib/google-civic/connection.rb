@@ -8,7 +8,6 @@ module Google
 
       def initialize(params={})
         @base_url = params.delete(:base_url)
-        establish!
       end
 
       def get(*args, &block)
@@ -31,7 +30,7 @@ module Google
       end
 
       def resource
-        @resource or raise "Connection not established"
+        @resource or establish!
       end
 
       def base_url
