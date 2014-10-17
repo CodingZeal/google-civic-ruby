@@ -1,24 +1,21 @@
 require "faraday"
 require "faraday_middleware"
+require "delegate"
 
 module Google
   module Civic
-    class Connection
+    class Connection < SimpleDelegator
+
       attr_writer :base_url
 
-      def initialize(params={})
-        @base_url = params.delete(:base_url)
-      end
-
-      def get(*args, &block)
-        resource.get(*args, &block)
-      end
-
-      def post(*args, &block)
-        resource.post(*args, &block)
+      def initialize(opts={})
+        self.base_url = opts.fetch(:base_url, "")
+        super(resource)
       end
 
       private
+
+      attr_reader :base_url
 
       def establish!
         @resource = Faraday.new(base_url) do |builder|
@@ -31,10 +28,6 @@ module Google
 
       def resource
         @resource or establish!
-      end
-
-      def base_url
-        @base_url or ""
       end
     end
   end
